@@ -18,8 +18,8 @@ const SignUp = () => {
               name="name"
               className="mt-2 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               placeholder="Enter your full name"
-              required
             />
+            
           </div>
 
           <div>

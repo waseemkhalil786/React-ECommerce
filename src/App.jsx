@@ -8,21 +8,22 @@ import SignIn from "./pages/login";
 import Footer from "./components/footer";
 
 function App() {
-  
-  return(
-  <> 
-  <Navbar/>
+  return (
+    <>
+      <Navbar />
 
-  <Routes>
-    <Route path="/" index element={<Home/>}/>
-    <Route path="/contact" element={<Contact/>}/>
-    <Route path="/about" element={<About/>}/>
-    <Route path="/signup" element={<Signup/>}/>
-    <Route path="/login" element={<SignIn/>}/>
-  </Routes>
-  <Footer/>
-  </>
-  )
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Routes>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/login" element={<SignIn />}/>
+        </Routes>
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
