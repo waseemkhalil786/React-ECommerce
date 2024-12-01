@@ -21,9 +21,11 @@ const About = () => {
           {/* Image Section */}
           <div className="flex justify-center">
             <img
-              src="file:///C:/Users/kk/AppData/Roaming/Microsoft/Windows/Network%20Shortcuts/image_files/405647879_334246529325651_7770486216155481866_n.jpg"
+              src="https://avatars.githubusercontent.com/u/156056064?v=4"
               alt="Our Story"
-              className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+              className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300
+              
+              "
             />
           </div>
 
