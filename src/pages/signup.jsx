@@ -1,23 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./auth/authentication";
-import {createUserWithEmailAndPassword} from 'firebase/auth'
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import toast from "react-hot-toast";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
-  const handleSubmit =async(e)=>{
-    e.preventDefault()
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
     try {
-      createUserWithEmailAndPassword(auth, email,password)
-      console.log("Account Created")
+      createUserWithEmailAndPassword(auth, email, password);
     } catch (error) {
-      console.log("error==>in signup",error);
-      
+      toast.error("Authentication error");
     }
-  }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
