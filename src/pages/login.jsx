@@ -12,7 +12,6 @@ const SignIn = () => {
     try {
       signInWithEmailAndPassword(auth, email, password);
       console.log("Login Succesfull");
-
     } catch (error) {
       console.log("error==>in login", error);
     }
@@ -21,8 +20,8 @@ const SignIn = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          SignIn  Account
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+          SignIn Account
         </h2>
         <form className="space-y-6 " onSubmit={handleSubmit}>
           <div>

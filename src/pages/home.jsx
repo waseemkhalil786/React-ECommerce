@@ -91,7 +91,7 @@ export default function Home() {
       {/* Newsletter Section */}
       <section className="py-16 bg-gray-100 text-gray-800">
         <div className="max-w-7xl mx-auto px-5 text-center">
-          <h2 className="text-3xl font-bold mb-8">Stay Updated</h2>
+          <h2 className="text-3xl font-bold mb-8">Update</h2>
           <p className="text-gray-600 mb-6">
             Subscribe to our newsletter to get the latest updates and exclusive
             deals!
@@ -103,7 +103,7 @@ export default function Home() {
               className="px-4 py-3 border rounded-lg shadow-sm w-full sm:w-auto"
             />
             <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-500">
-              Subscribe
+              Follow
             </button>
           </form>
         </div>
